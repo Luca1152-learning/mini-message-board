@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+</head>
+
+<body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-  </body>
+    <% for (let message of messages) { %>
+    <div>
+        <%= message.user %> (<%= message.added %>): <%= message.text %>
+    </div>
+    <% } %>
+</body>
+
 </html>
