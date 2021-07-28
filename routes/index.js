@@ -1,7 +1,7 @@
 var express = require("express")
 var router = express.Router()
 
-const messages = [
+global.messages = [
     {
         text: "Salut, boss!",
         user: "florin salam",
